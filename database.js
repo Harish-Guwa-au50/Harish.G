@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const { stringify } = require('uuid');
 mongoose.set('strictQuery', false);
 
-mongoose.connect("mongodb://127.0.0.1:27017/be", {useNewUrlParser: true, useUnifiedTopology: true}, 
+mongoose.connect("mongodb+srv://Harish:12345@cluster0.gl6dy5a.mongodb.net/BE'?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true}, 
     (err) => {
         if(err){
             console.log("Connection Failed", err)
